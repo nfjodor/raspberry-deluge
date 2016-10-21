@@ -1,5 +1,4 @@
 # Deluge torrent client for Raspberry Pi (debian)
-___
 ## Install
 
 ### Libtorrent
@@ -79,7 +78,7 @@ First of all, you need to stop deluge service:
 ```shell
 sudo service deluge stop
 ```
-Than edit the `~/.config/deluge/web.conf` and add an option, name `default_daemon` and the parameter is the following: `"127.0.0.1:58846"`.
+Than edit the `~/.config/deluge/web.conf` and set an option that name `default_daemon` and the parameter is the following: `"127.0.0.1:58846"`.
 
 Finally, start the deluge service:
 ```shell
