@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg4848"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/active16.png"
+   inkscape:export-xdpi="1.7055545"
+   inkscape:export-ydpi="1.7055545"
+   sodipodi:docname="active.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4850">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4856" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5467">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.69776249;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 792.51261,596.13496 C 1787.1961,462.38583 1788.2786,460.03989 1788.2786,460.03989 L 2050.3447,889.51678 C 1692.1626,1024.6476 1428.8778,1128.1462 1119.6165,1246.9702 L 792.51261,596.13496 z"
+         id="path5469"
+         sodipodi:nodetypes="ccccc" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5471">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.69776249;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 792.51261,596.13496 C 1787.1961,462.38583 1788.2786,460.03989 1788.2786,460.03989 L 2050.3447,889.51678 C 1692.1626,1024.6476 1428.8778,1128.1462 1119.6165,1246.9702 L 792.51261,596.13496 z"
+         id="path5473"
+         sodipodi:nodetypes="ccccc" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5475">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.69776249;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 792.51261,596.13496 C 1787.1961,462.38583 1788.2786,460.03989 1788.2786,460.03989 L 2050.3447,889.51678 C 1692.1626,1024.6476 1428.8778,1128.1462 1119.6165,1246.9702 L 792.51261,596.13496 z"
+         id="path5477"
+         sodipodi:nodetypes="ccccc" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="798.86898"
+     inkscape:cy="436.74575"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="958"
+     inkscape:window-x="1280"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata4853">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="opacity:1"
+       id="g4871">
+      <path
+         inkscape:export-ydpi="1.7060417"
+         inkscape:export-xdpi="1.7060417"
+         inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+         sodipodi:nodetypes="ccccc"
+         id="path2069"
+         d="M 335.10794,116.43168 L 610.53935,447.76408 C 809.45408,669.41324 696.25675,938.85368 393.35753,959.46028 C -32.813273,970.60316 -9.7709676,623.52458 107.82928,464.31364 L 335.10794,116.43168 z"
+         style="fill:#5599ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.07523891px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="1.7060417"
+         inkscape:export-xdpi="1.7060417"
+         inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+         sodipodi:nodetypes="ccccc"
+         id="path2071"
+         d="M 337.67292,165.87552 L 585.22638,464.67366 C 773.96211,684.57988 653.37942,910.02774 383.88559,930.97978 C 4.1291863,940.68143 29.040179,639.21796 125.2355,490.1649 L 337.67292,165.87552 z"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:21.67123985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.36612022" />
+      <path
+         inkscape:export-ydpi="1.7060417"
+         inkscape:export-xdpi="1.7060417"
+         inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+         id="rect2634"
+         d="M 359.0208,369.47132 C 289.64507,437.53055 219.98727,505.41409 150.61154,573.47313 C 187.93874,573.54143 225.35922,573.40503 262.68661,573.47313 C 262.68661,654.06643 262.68661,734.65974 262.68661,815.25304 C 329.00806,815.25304 395.32971,815.25304 461.65134,815.25304 C 461.65134,734.86969 461.65134,654.48632 461.65134,574.10276 C 496.04273,574.16582 530.52013,574.0399 564.91152,574.10276 C 496.30183,505.79126 427.63028,437.78301 359.0208,369.47132 z"
+         style="fill:#93beff;fill-opacity:1;stroke:#000000;stroke-width:14.10382843;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#8dd35f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.07523891px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1211.4629,48.95108 L 1486.8943,380.28348 C 1685.809,601.93264 1572.6117,871.37308 1269.7125,891.97968 C 843.5417,903.12256 866.584,556.04398 984.1842,396.83304 L 1211.4629,48.95108 z"
+       id="path4864"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+       inkscape:export-xdpi="1.7060417"
+       inkscape:export-ydpi="1.7060417"
+       clip-path="url(#clipPath5475)"
+       transform="translate(-876,68)" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:21.67123985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.36612022"
+       d="M 1214.0279,98.39492 L 1461.5813,397.19306 C 1650.317,617.09928 1529.7344,842.54714 1260.2405,863.49918 C 880.4842,873.20083 905.3951,571.73736 1001.5905,422.6843 L 1214.0279,98.39492 z"
+       id="path4866"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+       inkscape:export-xdpi="1.7060417"
+       inkscape:export-ydpi="1.7060417"
+       clip-path="url(#clipPath5471)"
+       transform="translate(-876,68)" />
+    <path
+       style="fill:#b7e399;fill-opacity:1;stroke:#000000;stroke-width:14.1288912;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1235.158,785.66485 C 1165.4485,716.69801 1095.4555,647.90922 1025.7459,578.94258 C 1063.2527,578.87336 1100.8533,579.01159 1138.3603,578.94258 C 1138.3603,497.27453 1138.3603,415.60647 1138.3603,333.93841 C 1205.0008,333.93841 1271.6416,333.93841 1338.2823,333.93841 C 1338.2823,415.39371 1338.2823,496.84903 1338.2823,578.30455 C 1372.8392,578.24065 1407.4825,578.36825 1442.0394,578.30455 C 1373.0995,647.52701 1304.0976,716.44219 1235.158,785.66485 z"
+       id="path4868"
+       inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+       inkscape:export-xdpi="1.7060417"
+       inkscape:export-ydpi="1.7060417"
+       clip-path="url(#clipPath5467)"
+       transform="matrix(0.9958235,0,0,1.0000914,-871.02338,67.589213)" />
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg9374"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/queued16.png"
+   inkscape:export-xdpi="1.7309855"
+   inkscape:export-ydpi="1.7309855"
+   sodipodi:docname="queued.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs9376">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective9382" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="726.34279"
+     inkscape:cy="746.86589"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="686"
+     inkscape:window-height="711"
+     inkscape:window-x="1859"
+     inkscape:window-y="122" />
+  <metadata
+     id="metadata9379">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#bfba14;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.07523891000000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 335.10794,116.43168 L 610.53935,447.76408 C 809.45408,669.41324 696.25675,938.85368 393.35753,959.46028 C -32.813273,970.60316 -9.7709676,623.52458 107.82928,464.31364 L 335.10794,116.43168 z"
+       id="path2069"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+       inkscape:export-xdpi="1.7060417"
+       inkscape:export-ydpi="1.7060417" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:21.67123984999999919;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.36612022000000000"
+       d="M 337.67292,165.87552 L 585.22638,464.67366 C 773.96211,684.57988 653.37942,910.02774 383.88559,930.97978 C 4.1291863,940.68143 29.040179,639.21796 125.2355,490.1649 L 337.67292,165.87552 z"
+       id="path2071"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/andrew/Projects/deluge/trunk/deluge/data/pixmaps/seeding16.png"
+       inkscape:export-xdpi="1.7060417"
+       inkscape:export-ydpi="1.7060417" />
+    <path
+       style="fill:#d6d36a;fill-opacity:1;stroke:#000000;stroke-width:12.60815144000000032;stroke-linecap:round;stroke-linejoin:round;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 356.08237,358.00767 C 298.29629,412.08893 240.45811,465.9299 182.67226,520.01115 C 211.63823,519.96135 240.67645,520.06093 269.64241,520.01115 C 269.64241,583.48327 269.64241,646.95538 269.64241,710.42751 C 240.67645,710.3777 211.63823,710.4773 182.67226,710.42751 C 240.45811,764.50876 298.29629,818.34973 356.08237,872.43098 C 414.51345,818.5496 473.18214,764.80739 531.61344,710.92598 C 500.17495,710.87193 468.65776,710.98006 437.21906,710.92598 C 437.21906,647.12155 437.21906,583.31714 437.21906,519.51267 C 468.65776,519.45859 500.17495,519.56671 531.61344,519.51267 C 473.18214,465.63124 414.51345,411.88906 356.08237,358.00767 z"
+       id="rect2634" />
+  </g>
+</svg>
