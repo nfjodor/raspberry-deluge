@@ -41,13 +41,13 @@ if dialog --backtitle "$dialogbacktitle" --title "Label movies and series" --yes
 fi
 
 # Run the big install ;)
-apt-get update && dpkg -i ./libtorrent/libtorrent* && apt-get install libboost-all-dev python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako && cd ./deluge && python setup.py clean -a && python setup.py build && python setup.py install && python setup.py install_data && cd .. && cp ./daemon/deluge /etc/init.d/deluge && sed -i -e "s#YOUR_USERNAME#${delugeuser}#g" /etc/init.d/deluge && chmod a+x /etc/init.d/deluge && update-rc.d deluge defaults && sudo service deluge start && sleep 10;
+apt-get update && dpkg -i ./libtorrent/libtorrent* && apt-get install libboost-all-dev python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako && cd ./deluge && python setup.py clean -a && python setup.py build && python setup.py install && python setup.py install_data && cd .. && cp ./daemon/deluge /etc/init.d/deluge && sed -i -e "s#YOUR_USERNAME#${delugeuser}#g" /etc/init.d/deluge && chmod a+x /etc/init.d/deluge && update-rc.d deluge defaults && sudo -u $delugeuser deluged && sleep 5;
 
 sudo -u $delugeuser deluge-console "config -s download_location $delugedownloadpath"
 
 if [ "$delugedaemonuser" != "" ] && [ "$delugedaemonpass" != "" ]; then
 	echo "remote daemon";
-	echo "$delugedaemonuser:$delugedaemonpass:10" > "$delugeconfigpath/auth" && \
+	echo "$delugedaemonuser:$delugedaemonpass:10" >> "$delugeconfigpath/auth" && \
 	sudo -u $delugeuser deluge-console "config -s allow_remote True" && \
 	echo "Remote access setup done!";
 fi
@@ -61,4 +61,4 @@ if [ "$autolabelmoviespath" != "" ] && [ "$autolabelseriespath" != "" ]; then
 	echo "Label plus setup done!";
 fi
 
-sudo service deluge restart;
+kill -9 `pgrep deluged` && sudo service deluge start;
