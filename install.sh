@@ -43,13 +43,14 @@ fi
 # Run the big install ;)
 apt-get update && dpkg -i ./libtorrent/libtorrent* && apt-get install libboost-all-dev python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako && cd ./deluge && python setup.py clean -a && python setup.py build && python setup.py install && python setup.py install_data && cd .. && cp ./daemon/deluge /etc/init.d/deluge && sed -i -e "s#YOUR_USERNAME#${delugeuser}#g" /etc/init.d/deluge && chmod a+x /etc/init.d/deluge && update-rc.d deluge defaults && sudo -u $delugeuser deluged && sleep 5;
 
-sudo -u $delugeuser deluge-console "config -s download_location $delugedownloadpath"
+sudo -u $delugeuser deluge-console "config -s download_location $delugedownloadpath";
+cp ./deluge-web/web.conf "$delugeconfigpath/web.conf";
 
 if [ "$delugedaemonuser" != "" ] && [ "$delugedaemonpass" != "" ]; then
 	echo "remote daemon";
 	echo "$delugedaemonuser:$delugedaemonpass:10" >> "$delugeconfigpath/auth" && \
-	sudo -u $delugeuser deluge-console "config -s allow_remote True" && \
-	echo "Remote access setup done!";
+	sleep 5 && \
+	sudo -u $delugeuser deluge-console "config -s allow_remote True";
 fi
 
 if [ "$autolabelmoviespath" != "" ] && [ "$autolabelseriespath" != "" ]; then
@@ -57,8 +58,8 @@ if [ "$autolabelmoviespath" != "" ] && [ "$autolabelseriespath" != "" ]; then
 	cp ./labelplus/labelplus.conf "$delugeconfigpath/labelplus.conf" && \
 	sed -i -e "s#path_movies#${autolabelmoviespath}#g" "$delugeconfigpath/labelplus.conf" && \
 	sed -i -e "s#path_series#${autolabelseriespath}#g" "$delugeconfigpath/labelplus.conf" && \
-	sudo -u $delugeuser deluge-console "plugin -e LabelPlus" && \
-	echo "Label plus setup done!";
+	sleep 5 && \
+	sudo -u $delugeuser deluge-console "plugin -e LabelPlus";
 fi
 
-kill -9 `pgrep deluged` && sudo service deluge start;
+sleep 5 && kill -9 `pgrep deluged` && sudo service deluge start;
