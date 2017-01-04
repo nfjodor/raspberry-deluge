@@ -15,6 +15,9 @@ if [ "$delugeuser" == "" ]; then
 	exit 1
 fi
 
+# If deluge service running, stop them
+sudo service deluge stop;
+
 # Put deluge config path to a variable
 delugeconfigpath=$(eval echo ~$delugeuser)"/.config/deluge";
 
@@ -34,19 +37,22 @@ if dialog --backtitle "$dialogbacktitle" --title "Label movies and series" --yes
 fi
 
 # Run the big install ;)
-apt-get update && dpkg -i ./libtorrent/libtorrent* && apt-get install libboost-all-dev python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako && cd ./deluge && python setup.py clean -a && python setup.py build && python setup.py install && python setup.py install_data && cd .. && cp ./daemon/deluge /etc/init.d/deluge && sed -i -e "s#YOUR_USERNAME#${delugeuser}#g" /etc/init.d/deluge && chmod a+x /etc/init.d/deluge && update-rc.d deluge defaults && service deluge start && service deluge stop;
+apt-get update && dpkg -i ./libtorrent/libtorrent* && apt-get install libboost-all-dev python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako && cd ./deluge && python setup.py clean -a && python setup.py build && python setup.py install && python setup.py install_data && cd .. && cp ./daemon/deluge /etc/init.d/deluge && sed -i -e "s#YOUR_USERNAME#${delugeuser}#g" /etc/init.d/deluge && chmod a+x /etc/init.d/deluge && update-rc.d deluge defaults && sudo service deluge start && sleep 10;
 
 if [ "$delugedaemonuser" != "" ] && [ "$delugedaemonpass" != "" ]; then
 	echo "remote daemon";
 	echo "$delugedaemonuser:$delugedaemonpass:10" > "$delugeconfigpath/auth" && \
-	sed -i -e "s#\"allow_remote\"\: false#\"allow_remote\"\: true#g" "$delugeconfigpath/core.conf";
+	sudo -u $delugeuser deluge-console "config -s allow_remote True" && \
+	echo "Remote access setup done!";
 fi
 
 if [ "$autolabelmoviespath" != "" ] && [ "$autolabelseriespath" != "" ]; then
 	cp ./labelplus/LabelPlus-0.3.2.2-py2.7.egg "$delugeconfigpath/plugins/LabelPlus-0.3.2.2-py2.7.egg" && \
 	cp ./labelplus/labelplus.conf "$delugeconfigpath/labelplus.conf" && \
 	sed -i -e "s#path_movies#${autolabelmoviespath}#g" "$delugeconfigpath/labelplus.conf" && \
-	sed -i -e "s#path_series#${autolabelseriespath}#g" "$delugeconfigpath/labelplus.conf";
+	sed -i -e "s#path_series#${autolabelseriespath}#g" "$delugeconfigpath/labelplus.conf" && \
+	sudo -u $delugeuser deluge-console "plugin -e LabelPlus" && \
+	echo "Label plus setup done!";
 fi
 
-service deluge start;
+sudo service deluge restart;

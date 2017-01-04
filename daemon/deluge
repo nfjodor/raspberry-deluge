@@ -22,9 +22,9 @@ case "$1" in
   start)
     echo "Starting Deluge"
     start-stop-daemon --start --chuid $USER --name deluged --pidfile $PIDFileDeluge \
-     --background --make-pidfile --exec /usr/local/bin/deluged -- --do-not-daemonize
+      --background --make-pidfile --exec /usr/local/bin/deluged -- --do-not-daemonize
     start-stop-daemon --start --chuid $USER --name deluge-web --pidfile $PIDFileWeb \
-     --background --make-pidfile --exec /usr/local/bin/deluge-web -- --port $PORT
+      --background --make-pidfile --exec /usr/local/bin/deluge-web -- --port $PORT
   ;;
 
   stop)
