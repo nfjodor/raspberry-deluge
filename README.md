@@ -2,6 +2,17 @@
 
 ## Install
 
+## Install method 1 (simpleton):
+
+Just run install script with sudo and follow the instructions. There is a known issue.
+If you enabled movies and series separator, after install you need to enable labelPlus plugin manually in deluge options.
+
+```shell
+sudo sh ./install.sh
+```
+
+## Install method 2 (for advanced users):
+
 ### Libtorrent
 
 First of all, we need to install libtorrent with dpkg:
