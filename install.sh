@@ -17,7 +17,7 @@ fi
 
 # Get download location
 dialogbacktitle="Deluge install - step 2 / 4 (download loaction)";
-delugedownloadpath=$(dialog --backtitle "$dialogbacktitle" --title "Daemon downloan path" --inputbox 'Please enter download location path.' 0 0 '/mnt/usbhdd/torrent' 3>&1 1>&2 2>&3 3>&-);
+delugedownloadpath=$(dialog --backtitle "$dialogbacktitle" --title "Daemon download path" --inputbox 'Please enter download location path.' 0 0 '/mnt/usbhdd/torrent' 3>&1 1>&2 2>&3 3>&-);
 
 # If deluge service running, stop them
 sudo service deluge stop;
@@ -36,8 +36,8 @@ fi
 # Ask to download movies and series separate folders
 dialogbacktitle="Deluge install - step 4 / 4 (label plus)";
 if dialog --backtitle "$dialogbacktitle" --title "Label movies and series" --yesno 'Do you want to enable label plus to separate movies and series directory?' 0 0; then
-    autolabelmoviespath=$(dialog --backtitle "$dialogbacktitle" --title "Label plus moives path" --inputbox 'Please enter movies download path.' 0 0 '/mnt/usbhdd/torrent/movies' 3>&1 1>&2 2>&3 3>&-);
-    autolabelseriespath=$(dialog --backtitle "$dialogbacktitle" --title "Label plus series path" --inputbox 'Please enter series download path.' 0 0 '/mnt/usbhdd/torrent/series' 3>&1 1>&2 2>&3 3>&-);  
+    autolabelmoviespath=$(dialog --backtitle "$dialogbacktitle" --title "Label plus moives path" --inputbox 'Please enter movies download path.' 0 0 "$delugedownloadpath/movies" 3>&1 1>&2 2>&3 3>&-);
+    autolabelseriespath=$(dialog --backtitle "$dialogbacktitle" --title "Label plus series path" --inputbox 'Please enter series download path.' 0 0 "$delugedownloadpath/series" 3>&1 1>&2 2>&3 3>&-);  
 fi
 
 # Run the big install ;)
